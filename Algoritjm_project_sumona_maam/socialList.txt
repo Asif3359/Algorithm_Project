@@ -1,0 +1,8 @@
+5 6
+Alice Bob 1
+Bob Charlie 2
+Alice Charlie 4
+Charlie David 1
+David Eve 3
+Eve Alice 2
+Alice

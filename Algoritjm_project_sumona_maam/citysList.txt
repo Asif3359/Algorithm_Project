@@ -1,0 +1,15 @@
+5
+NewYork
+LosAngeles
+Chicago
+Houston
+SanFrancisco
+7
+Newyork LosAngeles 6
+NewYork Chicago 5
+LosAngeles Chicago 7
+LosAngeles Houston 8
+Chicago Houston 9
+Chicago SanFrancisco 4
+Houston SanFrancisco 3
+NewYork
