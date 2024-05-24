@@ -398,8 +398,8 @@ int main()
         system("cls");
         cout << "\n\t\tMain\t\t\n";
         cout << "Do you want use \n";
-        cout << "1. GPS navigations\n";
-        cout << "2. Social network \n";
+        cout << "1. GPS navigations(Bellman-ford)\n";
+        cout << "2. Social network (Dijkstra's) \n";
         cout << "3. Exit program\n";
         cout << "Enter your choice : ";
         char ch;
