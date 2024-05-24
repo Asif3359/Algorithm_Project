@@ -269,7 +269,7 @@ void displayBellmenFord()
     cout << "Main Menu:" << endl;
     cout << "1. Input map manually" << endl;
     cout << "2. Load map from file" << endl;
-    cout << "3. Exit" << endl;
+    cout << "3. Back to main " << endl;
 }
 
 // dijkstra
@@ -338,76 +338,76 @@ void displayDijkstraMenu()
     cout << "3. Back to main menu" << endl;
 }
 
-//bellman ford main
+// bellman ford main
 void bellmanfordMain()
 {
-     while (true)
-            {
-                displayBellmenFord();
-                int choice;
-                cout << "Enter your choice: ";
-                cin >> choice;
-
-                BellmanFordGraph g(0, 0);
-
-                switch (choice)
-                {
-                case 1:
-                    inputMapManually(g);
-                    break;
-                case 2:
-                    loadMapFromFile(g);
-                    break;
-                case 3:
-                    cout << "Exiting..." << endl;
-                    break;
-                default:
-                    cout << "Invalid choice. Please try again." << endl;
-                    continue;
-                }
-            }
+    while (true)
+    {
+        displayBellmenFord();
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+        system("cls");
+        BellmanFordGraph g(0, 0);
+        switch (choice)
+        {
+        case 1:
+            inputMapManually(g);
+            break;
+        case 2:
+            loadMapFromFile(g);
+            break;
+        case 3:
+            cout << "Exiting..." << endl;
+            return;
+        default:
+            cout << "Invalid choice. Please try again." << endl;
+            continue;
+        }
+    }
 }
 
 void dijkstraMain()
 {
     while (true)
-            {
-                displayDijkstraMenu();
+    {
+        displayDijkstraMenu();
 
-                int ch;
-                cout << "Enter your choice: ";
-                cin >> ch;
-
-                switch (ch)
-                {
-                case 1:
-                    inputGraphManually();
-                    break;
-                case 2:
-                    loadGraphFromFile();
-                    break;
-                case 3:
-                    break;
-                default:
-                    cout << "Invalid choice. Please try again." << endl;
-                    continue;
-                }
-                break;
-            }
+        int ch;
+        cout << "Enter your choice: ";
+        cin >> ch;
+        system("cls");
+        switch (ch)
+        {
+        case 1:
+            inputGraphManually();
+            break;
+        case 2:
+            loadGraphFromFile();
+            break;
+        case 3:
+            return;
+        default:
+            cout << "Invalid choice. Please try again." << endl;
+            continue;
+        }
+    }
 }
 
 int main()
 {
+    system("cls");
     while (true)
     {
         cout << "Main Menu:" << endl;
         cout << "1. Use GPS" << endl;
-        cout << "2. Use Network" << endl;
+        cout << "2. social network manually " << endl;
         cout << "3. Exit" << endl;
 
         int choice;
         cout << "Enter your choice: ";
         cin >> choice;
+        system("cls");
 
         if (choice == 3)
         {
@@ -420,12 +420,14 @@ int main()
         case 1:
         {
 
-           bellmanfordMain();
-           break;
+            bellmanfordMain();
+            system("cls");
+            break;
         }
         case 2:
         {
             dijkstraMain();
+            system("cls");
             break;
         }
         default:
